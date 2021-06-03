@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectIcon from './ProjectIcon'
 import {filterProjects, search} from './projectSorting'
 import 'css/projects/projects.css'
-import 'css/sort.css'
+import 'css/projects/sort.css'
 
 export default function ProjectPage() {
 	return (
