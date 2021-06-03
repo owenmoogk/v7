@@ -1,0 +1,144 @@
+
+@media only screen and (min-width: 1000px) {
+	#homepage{
+
+		display: flex;
+		flex-direction: row;
+		height: calc(100% - 100px);
+
+		button{
+			background-color: rgb(37,41,52);
+			outline: none;
+			border: none;
+			color: white;
+			padding: 20px;
+			font-size: 20px;
+			transition: 0.2s;
+	
+			&:hover{
+				cursor: pointer;
+				transform: scale(1.1);
+			}
+		}
+
+		#smallScreenContactButton{
+			display: none;
+		}
+
+		#leftSection{
+			padding: 100px 100px 0;
+			height: calc(100% - 100px);
+			flex: 2;
+			background-color: white;
+
+			h1 {
+				font-size: 70px;
+				font-weight: bold;
+				line-height: 80px;
+			}
+			
+			#splash{
+				font-size: 30px;
+				transition: 0.2s;
+				width: fit-content;
+				max-width: 300px;
+				transform-origin: left;
+				user-select: none;
+
+				&:hover{
+					transform: scale(1.1);
+				}
+			}
+
+			a{
+				text-decoration: none;
+				color: rgb(0,150,255);
+			}
+
+			a:hover{
+				border-bottom: 2px solid rgb(0,150,255);
+			}
+		}
+
+
+		#rightSection{
+			flex: 5;
+			padding: 100px 50px;
+			height: calc(100% - 100px);
+			background-color: #add8e6;
+
+			p{
+				font-size: 25px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	#homepage{
+
+		display: flex;
+		flex-direction: column;
+
+		button{
+			background-color: rgb(37,41,52);
+			outline: none;
+			border: none;
+			color: white;
+			padding: 20px;
+			font-size: 20px;
+			transition: 0.2s;
+	
+			&:hover{
+				cursor: pointer;
+				transform: scale(1.1);
+			}
+		}
+
+		#largeScreenContactButton{
+			display: none;
+		}
+
+		#leftSection{
+			padding-top: 50px;
+		}
+
+		.homepageSection{
+			padding: 0 100px;
+			background-color: white;
+
+			h1 {
+				font-size: 70px;
+				font-weight: bold;
+				line-height: 80px;
+			}
+			
+			#splash{
+				font-size: 30px;
+				transition: 0.2s;
+				width: 0px;
+				white-space: nowrap;
+
+				&:hover{
+					transform: scale(1.1);
+				}
+			}
+
+			a{
+				text-decoration: none;
+				color: rgb(0,150,255);
+			}
+			a:hover{
+				border-bottom: 2px solid rgb(0,150,255);
+			}
+
+			p{
+				font-size: 25px;
+			}
+		}
+	}
+
+	html, body{
+		overflow-x: hidden;
+	}
+}
