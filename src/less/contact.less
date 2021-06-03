@@ -4,61 +4,91 @@
 	text-decoration: none;
 }
 
-#contactLinks {
-	background-color: rgb(37,41,52);
-	line-height: 40px;
-	font-size: 23px;
-	font-weight: bold;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	max-width: 800px;
-	justify-content: center;
-}
+#contactPage{
 
-#contactForm{
-	background-color: rgb(37,41,52);
-}
+	height: calc(100% - 300px);
 
-.contactLink {
-	color: white;
-	font-size: 20px;
-}
+	#contactCards{
+		display: flex;
+		flex-direction: row;
+		height: 100%;
+	}
 
-.contactLink .header{
-	font-weight: bold;
-}
+	#contactForm, #contactLinks{
+		flex: 1;
+		margin: 0 5%;
+		border-radius: 20px;
+		background-color: lightblue;
+	}
 
-.contactLink .contactText{
-	font-weight: lighter;
-}
+	#contactForm{
 
-#contactPage input,textarea{
-	outline: none;
-	background-color: rgba(255,255,255, 0.2);
-	border: none;
-	flex: 1;
-	margin: 10px;
-	padding: 20px;
-	color: white;
-}
+		h2{
+			text-align: center;
+		}
 
-#contactPage button{
-	width: 100px;
-	margin: auto;
-	outline: none;
-	border: none;
-	border-radius: 10px;
-	font-size: 20px;
-	padding: 10px 0;
-	background-color: rgba(255,255,255, 0.2);
-}
+		#formSplit{
+			display: flex;
+			flex-direction: row;
 
-.contactPage textarea{
-	height: 200px;
-}
+			input{
+				flex: 1;
+			}
+		}
 
-.contactPage form{
-	display: flex;
-	flex-direction: column;
+		input,textarea{
+			outline: none;
+			background-color: rgba(255,255,255, 0.5);
+			border: none;
+			margin: 10px;
+			padding: 10px;
+			color: white;
+		}
+
+		textarea{
+			outline: none;
+			background-color: rgba(255,255,255, 0.5);
+			border: none;
+			margin: 10px;
+			padding: 10px;
+			color: white;
+			height: 100%;
+			resize: none;
+		}
+		
+		form{
+			display: flex;
+			flex-direction: column;
+		}
+
+		button{
+			width: 200px;
+			align-self: center;
+			margin-bottom: 10px;
+		}
+	}
+
+	#contactLinks {
+		line-height: 40px;
+		font-size: 23px;
+		font-weight: bold;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		max-width: 800px;
+		justify-content: center;
+
+		.contactLink {
+			font-size: 20px;
+			color: black;
+
+			.header{
+				font-weight: bold;
+			}
+
+			.contactText{
+				font-weight: lighter;
+			}
+		}
+	}
 }

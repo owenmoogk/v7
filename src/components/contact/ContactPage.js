@@ -36,36 +36,38 @@ export default function ContactPage() {
 			document.getElementById('messageInput').value = ''
 			alert("Sent!")
 		});
-		}
+	}
 
 	return (
 		<div className="main" id='contactPage'>
 			<p className="title">Contact</p>
 			<hr />
-			<div id='contactForm'>
-				<h2>Send me a message!</h2>
-				<form>
-					<div>
-						<input type='text' placeholder='John Doe' id='nameInput'></input>
-						<input type='text' placeholder='johndoe@gmail.com' id='emailInput'></input>
-					</div>
-					<input type='text' placeholder='Subject' id='subjectInput'></input>
-					<textarea type='text' placeholder='Message' id='messageInput'></textarea>
-					<button value="Send Email"
-						onClick={() => sendEmail()}>Submit</button>
-				</form>
-			</div>
 			<br/>
-			<div id="contactLinks">
-				<ContactLink link='mailto:owenmoogk@gmail.com' text='Personal Email' />
-				<ContactLink link='tel:+1-226-989-0602' text='Phone' />
-				<ContactLink link='https://linktr.ee/owenmoogk' text='Social Media' />
-				<ContactLink link='https://github.com/owenmoogk' text='Github' />
-				<ContactLink link='https://www.thingiverse.com/owen_moogk' text='Thingiverse' />
-				<ContactLink link='https://repl.it/@owenm21' text='Repl.it' />
-				<ContactLink link='https://www.linkedin.com/in/owen-moogk-1ab9371b8/' text='LinkedIn' />
+			<div id='contactCards'>
+
+				<div id='contactForm'>
+					<h2>Send me a message!</h2>
+					<form>
+						<div id="formSplit">
+							<input type='text' placeholder='John Doe' id='nameInput'></input>
+							<input type='text' placeholder='johndoe@gmail.com' id='emailInput'></input>
+						</div>
+						<input type='text' placeholder='Subject' id='subjectInput'></input>
+						<textarea type='text' placeholder='Message' id='messageInput' height='200px'></textarea>
+						<button value="Send Email"
+							onClick={() => sendEmail()}>Submit</button>
+					</form>
+				</div>
+				<div id="contactLinks">
+					<ContactLink link='mailto:owenmoogk@gmail.com' text='Personal Email' />
+					<ContactLink link='tel:+1-226-989-0602' text='Phone' />
+					<ContactLink link='https://linktr.ee/owenmoogk' text='Social Media' />
+					<ContactLink link='https://github.com/owenmoogk' text='Github' />
+					<ContactLink link='https://www.thingiverse.com/owen_moogk' text='Thingiverse' />
+					<ContactLink link='https://repl.it/@owenm21' text='Repl.it' />
+					<ContactLink link='https://www.linkedin.com/in/owen-moogk-1ab9371b8/' text='LinkedIn' />
+				</div>
 			</div>
-			<br/>
 		</div>
 	);
 }

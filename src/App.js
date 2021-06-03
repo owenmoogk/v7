@@ -8,7 +8,7 @@ import Nav from "components/Nav.js"
 import NavButton from 'components/NavButton.js'
 import Homepage from 'components/homepage/Homepage.js'
 import Workpage from 'components/Workpage.js'
-import ContactPage from 'components/contact/Contact.js';
+import ContactPage from 'components/contact/ContactPage.js';
 import ProjectRouter from 'components/ProjectRouter.js';
 import 'css/index.css'
 
