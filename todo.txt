@@ -1,7 +1,0 @@
-add pages for:
-	geom calculator
-	covid website
-	covid scraper
-
-
-home page blue section buttons under text on large page
