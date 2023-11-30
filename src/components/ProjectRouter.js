@@ -4,8 +4,8 @@ import {
 	Switch,
 	Route
 } from 'react-router-dom';
-import Projects from  'components/projects/Projects.js'
-import ProjectPage from 'components/projects/ProjectPage.js'
+import Projects from  './projects/Projects.js'
+import ProjectPage from './projects/ProjectPage.js'
 
 function App() {
 

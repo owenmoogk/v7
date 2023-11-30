@@ -1,4 +1,4 @@
-import 'css/home.css'
+import '../../css/home.css'
 import React, {useState, useEffect} from 'react'
 
 export default function Homepage() {
